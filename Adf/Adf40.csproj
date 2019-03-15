@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{660B5FCD-DA5D-412F-A6D7-84C416AFD57D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adf</RootNamespace>
+    <AssemblyName>Adf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET4</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\debug\Adf.XML</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\develop\bin\adf4\</OutputPath>
+    <DefineConstants>TRACE;NET2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\develop\bin\adf4\Adf.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDataConverter.cs" />
+    <Compile Include="Channels\ICacheChannel.cs" />
+    <Compile Include="ConfigException.cs" />
+    <Compile Include="Config\ConfigLoader.cs" />
+    <Compile Include="Config\SmtpConfig.cs" />
+    <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="Db\DbLogger.cs" />
+    <Compile Include="HttpServerActionHandler.cs" />
+    <Compile Include="HttpServerErrorEventArgs.cs" />
+    <Compile Include="HttpServerMultipartReceiver.cs" />
+    <Compile Include="HttpServerEventArgs.cs" />
+    <Compile Include="HttpServerFileParameter.cs" />
+    <Compile Include="IHttpServerHandler.cs" />
+    <Compile Include="PathRoute.cs" />
+    <Compile Include="QueueTasks.cs" />
+    <Compile Include="Channels\ISessionChannel.cs" />
+    <Compile Include="Skip32Cipher.cs" />
+    <Compile Include="SocketBufferReader.cs" />
+    <Compile Include="SocketReader.cs" />
+    <Compile Include="HttpStatusHelper.cs" />
+    <Compile Include="IHttpServerFileHandler.cs" />
+    <Compile Include="LogException.cs" />
+    <Compile Include="NativeBinarySerializable.cs" />
+    <Compile Include="NumberBaseEncode.cs" />
+    <Compile Include="CRC32Helper.cs" />
+    <Compile Include="IObjectCache.cs" />
+    <Compile Include="ObjectCache.cs" />
+    <Compile Include="Redis\RedisHyperLogLog.cs" />
+    <Compile Include="Redis\RedisPubSub.cs" />
+    <Compile Include="Redis\RedisSubscribeResult.cs" />
+    <Compile Include="SmtpAuth.cs" />
+    <Compile Include="ThreadTasks.cs" />
+    <Compile Include="CFunc.cs" />
+    <Compile Include="Arguments.cs" />
+    <Compile Include="AuthcodeHelper.cs" />
+    <Compile Include="Base62Helper.cs" />
+    <Compile Include="Base64Helper.cs" />
+    <Compile Include="BinarySerializable.cs" />
+    <Compile Include="ByteHelper.cs" />
+    <Compile Include="CollectionGeneric.cs" />
+    <Compile Include="CompressHelper.cs" />
+    <Compile Include="Config\ConfigBase.cs" />
+    <Compile Include="Config\ConfigValue.cs" />
+    <Compile Include="Config\GlobalConfig.cs" />
+    <Compile Include="Config\ServerConfigItem.cs" />
+    <Compile Include="Config\ServerConfig.cs" />
+    <Compile Include="Config\RegularConfig.cs" />
+    <Compile Include="Config\IpGroupCollection.cs" />
+    <Compile Include="Config\IpGroupElement.cs" />
+    <Compile Include="Config\IpGroupSection.cs" />
+    <Compile Include="ConsistentHashing.cs" />
+    <Compile Include="ConvertHelper.cs" />
+    <Compile Include="Db\ParameterCallback.cs" />
+    <Compile Include="Db\DbHelper.cs" />
+    <Compile Include="Db\DbReader.cs" />
+    <Compile Include="Db\IDbEntity.cs" />
+    <Compile Include="Db\IDbReader.cs" />
+    <Compile Include="Db\Access.cs" />
+    <Compile Include="Db\AccessSqlBuilder.cs" />
+    <Compile Include="Db\DbException.cs" />
+    <Compile Include="Db\DbFactory.cs" />
+    <Compile Include="Db\IDbFactory.cs" />
+    <Compile Include="Db\MySql.cs" />
+    <Compile Include="Db\MySqlBuilder.cs" />
+    <Compile Include="Db\WhereRelation.cs" />
+    <Compile Include="Db\SqlServer.cs" />
+    <Compile Include="Db\DbEntity.cs" />
+    <Compile Include="Db\SqlBuilder.cs" />
+    <Compile Include="Db\Sqlite.cs" />
+    <Compile Include="Db\SqliteBuilder.cs" />
+    <Compile Include="DnsHelper.cs" />
+    <Compile Include="DnsRecord.cs" />
+    <Compile Include="DynamicInvoke.cs" />
+    <Compile Include="HttpServer.cs" />
+    <Compile Include="HttpServerChunkStatus.cs" />
+    <Compile Include="HttpServerContext.cs" />
+    <Compile Include="HttpServerWebSocketMessageEventArgs.cs" />
+    <Compile Include="ICache.cs" />
+    <Compile Include="IPoolInstance.cs" />
+    <Compile Include="IBinarySerializable.cs" />
+    <Compile Include="ListHash.cs" />
+    <Compile Include="ObjectConverter.cs" />
+    <Compile Include="ProcuriosJson.cs" />
+    <Compile Include="JsonBinarySerializable.cs" />
+    <Compile Include="LogManager.cs" />
+    <Compile Include="LogWriter.cs" />
+    <Compile Include="IPoolMember.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Memcache.cs" />
+    <Compile Include="MemcachePool.cs" />
+    <Compile Include="MemcachePoolMember.cs" />
+    <Compile Include="PropertyAccessor.cs" />
+    <Compile Include="Redis\RedisAggregate.cs" />
+    <Compile Include="Redis\RedisClient.cs" />
+    <Compile Include="Redis\RedisClientPool.cs" />
+    <Compile Include="Redis\RedisClientPoolMember.cs" />
+    <Compile Include="Redis\RedisKeyType.cs" />
+    <Compile Include="Redis\RedisResponseException.cs" />
+    <Compile Include="Redis\RedisWriter.cs" />
+    <Compile Include="ResourceHelper.cs" />
+    <Compile Include="RetryHelper.cs" />
+    <Compile Include="Pool.cs" />
+    <Compile Include="SocketHelper.cs" />
+    <Compile Include="Mq.cs" />
+    <Compile Include="MqReceive.cs" />
+    <Compile Include="StreamHelper.cs" />
+    <Compile Include="TimeIdGenerator.cs" />
+    <Compile Include="TimesecondHelper.cs" />
+    <Compile Include="TypeHelper.cs" />
+    <Compile Include="Image\ImageHanlde.cs" />
+    <Compile Include="Image\ImageMark.cs" />
+    <Compile Include="Image\ImageMarkPosition.cs" />
+    <Compile Include="Pager.cs" />
+    <Compile Include="PathHelper.cs" />
+    <Compile Include="SerializeHelper.cs" />
+    <Compile Include="RandomHelper.cs" />
+    <Compile Include="Regular.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="UniqueID.cs" />
+    <Compile Include="UnixTimestampHelper.cs" />
+    <Compile Include="UriHelper.cs" />
+    <Compile Include="UUIDEncoder.cs" />
+    <Compile Include="ValidateHelper.cs" />
+    <Compile Include="MD5Helper.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="EncodingHelper.cs" />
+    <Compile Include="HtmlHelper.cs" />
+    <Compile Include="IpHelper.cs" />
+    <Compile Include="NumberHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="CacheValue.cs" />
+    <Compile Include="WebSocketAction.cs" />
+    <Compile Include="WebSocketClient.cs" />
+    <Compile Include="WebSocketCloseEventArgs.cs" />
+    <Compile Include="WebSocketCloseReason.cs" />
+    <Compile Include="WebSocketDataFrame.cs" />
+    <Compile Include="WebSocketDataFrameHeader.cs" />
+    <Compile Include="WebSocketHandshake.cs" />
+    <Compile Include="WebSocketMessageEventArgs.cs" />
+    <Compile Include="WebSocketOpcode.cs" />
+    <Compile Include="WindowsEventLog.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="PoolException.cs" />
+    <Compile Include="LogEventArgs.cs" />
+    <Compile Include="LogExceptionEventArgs.cs" />
+    <Compile Include="PoolNewInstanceExceptionEventArgs.cs" />
+    <Compile Include="MqException.cs" />
+    <Compile Include="PasswordHelper.cs" />
+    <Compile Include="AESHelper.cs" />
+    <Compile Include="HttpServerContextBase.cs" />
+    <Compile Include="HttpServerWebSocketContext.cs" />
+    <Compile Include="HttpServerRequestType.cs" />
+    <Compile Include="Base36Helper.cs" />
+    <Compile Include="ISmtp.cs" />
+    <Compile Include="Smtp.cs" />
+    <Compile Include="ExceptionMail.cs" />
+    <Compile Include="Redis\RedisConnection.cs" />
+    <Compile Include="Redis\RedisHashes.cs" />
+    <Compile Include="Redis\RedisLists.cs" />
+    <Compile Include="Redis\RedisSets.cs" />
+    <Compile Include="Redis\RedisSortedSets.cs" />
+    <Compile Include="UUIDBase58.cs" />
+    <Compile Include="LogManagerWriter.cs" />
+    <Compile Include="LogAsyncWriter.cs" />
+    <Compile Include="LogAsyncManager.cs" />
+    <Compile Include="DataSerializable.cs" />
+    <Compile Include="HttpServerRouteHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

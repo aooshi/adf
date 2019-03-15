@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8428D63-B45B-4D6F-9848-9F0B58CEB5AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adf</RootNamespace>
+    <AssemblyName>Adf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\develop\bin\adf4\net40\4.6.13\</OutputPath>
+    <DefineConstants>TRACE;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\develop\bin\adf4\net40\4.6.13\Adf.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\Adf\ActionResult.cs">
+      <Link>ActionResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\AESHelper.cs">
+      <Link>AESHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Arguments.cs">
+      <Link>Arguments.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\AuthcodeHelper.cs">
+      <Link>AuthcodeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Base36Helper.cs">
+      <Link>Base36Helper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Base62Helper.cs">
+      <Link>Base62Helper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Base64Helper.cs">
+      <Link>Base64Helper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\BaseDataConverter.cs">
+      <Link>BaseDataConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\BinarySerializable.cs">
+      <Link>BinarySerializable.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ByteHelper.cs">
+      <Link>ByteHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\CacheValue.cs">
+      <Link>CacheValue.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\CFunc.cs">
+      <Link>CFunc.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\CollectionGeneric.cs">
+      <Link>CollectionGeneric.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\CompressHelper.cs">
+      <Link>CompressHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ConfigException.cs">
+      <Link>ConfigException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ConfigHelper.cs">
+      <Link>ConfigHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\AppConfig.cs">
+      <Link>Config\AppConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\ConfigBase.cs">
+      <Link>Config\ConfigBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\ConfigException.cs">
+      <Link>Config\ConfigException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\ConfigLoader.cs">
+      <Link>Config\ConfigLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\ConfigValue.cs">
+      <Link>Config\ConfigValue.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\ConfigWatcher.cs">
+      <Link>Config\ConfigWatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\GlobalConfig.cs">
+      <Link>Config\GlobalConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\IConfig.cs">
+      <Link>Config\IConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\IpGroupCollection.cs">
+      <Link>Config\IpGroupCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\IpGroupElement.cs">
+      <Link>Config\IpGroupElement.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\IpGroupSection.cs">
+      <Link>Config\IpGroupSection.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\LogConfig.cs">
+      <Link>Config\LogConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\NameValue.cs">
+      <Link>Config\NameValue.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\RegularConfig.cs">
+      <Link>Config\RegularConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\ServerConfig.cs">
+      <Link>Config\ServerConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\ServerConfigItem.cs">
+      <Link>Config\ServerConfigItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Config\SmtpConfig.cs">
+      <Link>Config\SmtpConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ConsistentHashing.cs">
+      <Link>ConsistentHashing.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ConvertHelper.cs">
+      <Link>ConvertHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Counter.cs">
+      <Link>Counter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\CRC32Helper.cs">
+      <Link>CRC32Helper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\CrcHelper.cs">
+      <Link>CrcHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\DataSerializable.cs">
+      <Link>DataSerializable.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\Access.cs">
+      <Link>Db\Access.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\AccessSqlBuilder.cs">
+      <Link>Db\AccessSqlBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\DbEntity.cs">
+      <Link>Db\DbEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\DbException.cs">
+      <Link>Db\DbException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\DbFactory.cs">
+      <Link>Db\DbFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\DbHelper.cs">
+      <Link>Db\DbHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\DbLogger.cs">
+      <Link>Db\DbLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\DbReader.cs">
+      <Link>Db\DbReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\IDbEntity.cs">
+      <Link>Db\IDbEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\IDbFactory.cs">
+      <Link>Db\IDbFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\IDbReader.cs">
+      <Link>Db\IDbReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\MySql.cs">
+      <Link>Db\MySql.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\MySqlBuilder.cs">
+      <Link>Db\MySqlBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\ParameterCallback.cs">
+      <Link>Db\ParameterCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\SqlBuilder.cs">
+      <Link>Db\SqlBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\Sqlite.cs">
+      <Link>Db\Sqlite.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\SqliteBuilder.cs">
+      <Link>Db\SqliteBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\SqlServer.cs">
+      <Link>Db\SqlServer.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Db\WhereRelation.cs">
+      <Link>Db\WhereRelation.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\DnsHelper.cs">
+      <Link>DnsHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\DynamicInvoke.cs">
+      <Link>DynamicInvoke.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\EncodingHelper.cs">
+      <Link>EncodingHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\EnumHelper.cs">
+      <Link>EnumHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ExceptionMail.cs">
+      <Link>ExceptionMail.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HashItemPool.cs">
+      <Link>HashItemPool.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HostHelper.cs">
+      <Link>HostHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HtmlHelper.cs">
+      <Link>HtmlHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpClient.cs">
+      <Link>HttpClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServer.cs">
+      <Link>HttpServer.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerActionHandler.cs">
+      <Link>HttpServerActionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerChunkStatus.cs">
+      <Link>HttpServerChunkStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerContext.cs">
+      <Link>HttpServerContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerContextBase.cs">
+      <Link>HttpServerContextBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerErrorEventArgs.cs">
+      <Link>HttpServerErrorEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerEventArgs.cs">
+      <Link>HttpServerEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerFileParameter.cs">
+      <Link>HttpServerFileParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerMultipartReceiver.cs">
+      <Link>HttpServerMultipartReceiver.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerRequestType.cs">
+      <Link>HttpServerRequestType.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerRouteHandler.cs">
+      <Link>HttpServerRouteHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpServerWebSocketContext.cs">
+      <Link>HttpServerWebSocketContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\HttpStatusHelper.cs">
+      <Link>HttpStatusHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IBinarySerializable.cs">
+      <Link>IBinarySerializable.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ICache.cs">
+      <Link>ICache.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ICreater.cs">
+      <Link>ICreater.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IHttpServerFileHandler.cs">
+      <Link>IHttpServerFileHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IHttpServerHandler.cs">
+      <Link>IHttpServerHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ILogWriter.cs">
+      <Link>ILogWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Image\ImageHanlde.cs">
+      <Link>Image\ImageHanlde.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Image\ImageMark.cs">
+      <Link>Image\ImageMark.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Image\ImageMarkPosition.cs">
+      <Link>Image\ImageMarkPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IntervalLoop.cs">
+      <Link>IntervalLoop.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IObjectCache.cs">
+      <Link>IObjectCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IO\BinaryReaderBE.cs">
+      <Link>IO\BinaryReaderBE.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IO\BinaryReaderLE.cs">
+      <Link>IO\BinaryReaderLE.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IO\BinaryWriterBE.cs">
+      <Link>IO\BinaryWriterBE.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IO\BinaryWriterLE.cs">
+      <Link>IO\BinaryWriterLE.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IO\IBinaryReader.cs">
+      <Link>IO\IBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IO\IBinaryWriter.cs">
+      <Link>IO\IBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IpHelper.cs">
+      <Link>IpHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IPoolInstance.cs">
+      <Link>IPoolInstance.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\IPoolMember.cs">
+      <Link>IPoolMember.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ISmtp.cs">
+      <Link>ISmtp.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\JsonBinarySerializable.cs">
+      <Link>JsonBinarySerializable.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\JsonHelper.cs">
+      <Link>JsonHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ListHash.cs">
+      <Link>ListHash.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogAgent.cs">
+      <Link>LogAgent.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogAgentWriter.cs">
+      <Link>LogAgentWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogEventArgs.cs">
+      <Link>LogEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogException.cs">
+      <Link>LogException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogExceptionEventArgs.cs">
+      <Link>LogExceptionEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogLevel.cs">
+      <Link>LogLevel.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogManager.cs">
+      <Link>LogManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LogWriter.cs">
+      <Link>LogWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\LRUCache.cs">
+      <Link>LRUCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\DKIM.cs">
+      <Link>Mail\DKIM.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\MailAddress.cs">
+      <Link>Mail\MailAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\MailClient.cs">
+      <Link>Mail\MailClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\MailCommon.cs">
+      <Link>Mail\MailCommon.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\MailDeliver.cs">
+      <Link>Mail\MailDeliver.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\MailMessage.cs">
+      <Link>Mail\MailMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\MailPriority.cs">
+      <Link>Mail\MailPriority.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\OpenSslKey.cs">
+      <Link>Mail\OpenSslKey.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mail\SendCompletedEventArgs.cs">
+      <Link>Mail\SendCompletedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Md5Helper.cs">
+      <Link>Md5Helper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\MemberPool.cs">
+      <Link>MemberPool.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Memcache.cs">
+      <Link>Memcache.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\MemcacheNativeHandler.cs">
+      <Link>MemcacheNativeHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\MemcachePool.cs">
+      <Link>MemcachePool.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\MemcachePoolMember.cs">
+      <Link>MemcachePoolMember.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Mq.cs">
+      <Link>Mq.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\MqException.cs">
+      <Link>MqException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\MqReceive.cs">
+      <Link>MqReceive.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\NativeBinarySerializable.cs">
+      <Link>NativeBinarySerializable.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\NumberBaseEncode.cs">
+      <Link>NumberBaseEncode.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\NumberHelper.cs">
+      <Link>NumberHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ObjectCache.cs">
+      <Link>ObjectCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ObjectConverter.cs">
+      <Link>ObjectConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ObjectHelper.cs">
+      <Link>ObjectHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Pager.cs">
+      <Link>Pager.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\PasswordHelper.cs">
+      <Link>PasswordHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\PathHelper.cs">
+      <Link>PathHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\PathRoute.cs">
+      <Link>PathRoute.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Pool.cs">
+      <Link>Pool.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\PoolException.cs">
+      <Link>PoolException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\PoolNewInstanceExceptionEventArgs.cs">
+      <Link>PoolNewInstanceExceptionEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ProcuriosJson.cs">
+      <Link>ProcuriosJson.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ProcuriosJson2.cs">
+      <Link>ProcuriosJson2.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\PropertyAccessor.cs">
+      <Link>PropertyAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\QueueServerBase.cs">
+      <Link>QueueServerBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\QueueServerClient.cs">
+      <Link>QueueServerClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\QueueServerEncoder.cs">
+      <Link>QueueServerEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\QueueServerPool.cs">
+      <Link>QueueServerPool.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\QueueTask.cs">
+      <Link>QueueTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\QueueTasks.cs">
+      <Link>QueueTasks.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\RandomHelper.cs">
+      <Link>RandomHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisAggregate.cs">
+      <Link>RedisAggregate.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisClient.cs">
+      <Link>RedisClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisClientPool.cs">
+      <Link>RedisClientPool.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisClientPoolMember.cs">
+      <Link>RedisClientPoolMember.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisConnection.cs">
+      <Link>RedisConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisHashes.cs">
+      <Link>RedisHashes.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisHyperLogLog.cs">
+      <Link>RedisHyperLogLog.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisKeyType.cs">
+      <Link>RedisKeyType.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisLists.cs">
+      <Link>RedisLists.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisPubSub.cs">
+      <Link>RedisPubSub.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisResponseException.cs">
+      <Link>RedisResponseException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisSets.cs">
+      <Link>RedisSets.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisSortedSets.cs">
+      <Link>RedisSortedSets.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisSubscribeResult.cs">
+      <Link>RedisSubscribeResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Redis\RedisWriter.cs">
+      <Link>RedisWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Regular.cs">
+      <Link>Regular.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ResourceHelper.cs">
+      <Link>ResourceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\RetryHelper.cs">
+      <Link>RetryHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SerializeHelper.cs">
+      <Link>SerializeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SessionClient.cs">
+      <Link>SessionClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SessionManager.cs">
+      <Link>SessionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Singleton.cs">
+      <Link>Singleton.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Skip32Cipher.cs">
+      <Link>Skip32Cipher.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\Smtp.cs">
+      <Link>Smtp.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SmtpAuth.cs">
+      <Link>SmtpAuth.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketBufferReader.cs">
+      <Link>SocketBufferReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\ConnectionEventArgs.cs">
+      <Link>SocketConnection\ConnectionEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\ConnectionHandler.cs">
+      <Link>SocketConnection\ConnectionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\ErrorEventArgs.cs">
+      <Link>SocketConnection\ErrorEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\IConnectionHandler.cs">
+      <Link>SocketConnection\IConnectionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\IListenerHandler.cs">
+      <Link>SocketConnection\IListenerHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\ListenerHandler.cs">
+      <Link>SocketConnection\ListenerHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\MessageEventArgs.cs">
+      <Link>SocketConnection\MessageEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\ParserException.cs">
+      <Link>SocketConnection\ParserException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketClient.cs">
+      <Link>SocketConnection\SocketClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketClientException.cs">
+      <Link>SocketConnection\SocketClientException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketConnection.cs">
+      <Link>SocketConnection\SocketConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketConnectionException.cs">
+      <Link>SocketConnection\SocketConnectionException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketIdentifier.cs">
+      <Link>SocketConnection\SocketIdentifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketListener.cs">
+      <Link>SocketConnection\SocketListener.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketListenerException.cs">
+      <Link>SocketConnection\SocketListenerException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketConnection\SocketPoolListener.cs">
+      <Link>SocketConnection\SocketPoolListener.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketHelper.cs">
+      <Link>SocketHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SocketReader.cs">
+      <Link>SocketReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\StreamHelper.cs">
+      <Link>StreamHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\StreamReadState.cs">
+      <Link>StreamReadState.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\StringHelper.cs">
+      <Link>StringHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\SyncQueue.cs">
+      <Link>SyncQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ThreadTasks.cs">
+      <Link>ThreadTasks.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\TimeIdGenerator.cs">
+      <Link>TimeIdGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\TimesecondHelper.cs">
+      <Link>TimesecondHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\TypeHelper.cs">
+      <Link>TypeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\UniqueID.cs">
+      <Link>UniqueID.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\UnixTimestampHelper.cs">
+      <Link>UnixTimestampHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\UriHelper.cs">
+      <Link>UriHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\UUIDBase58.cs">
+      <Link>UUIDBase58.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\UUIDEncoder.cs">
+      <Link>UUIDEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\ValidateHelper.cs">
+      <Link>ValidateHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WaitTable.cs">
+      <Link>WaitTable.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketAction.cs">
+      <Link>WebSocketAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketClient.cs">
+      <Link>WebSocketClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketCloseReason.cs">
+      <Link>WebSocketCloseReason.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketDataFrame.cs">
+      <Link>WebSocketDataFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketDataFrameHeader.cs">
+      <Link>WebSocketDataFrameHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketEventArgs.cs">
+      <Link>WebSocketEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketHandshake.cs">
+      <Link>WebSocketHandshake.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WebSocketOpcode.cs">
+      <Link>WebSocketOpcode.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\WindowsEventLog.cs">
+      <Link>WindowsEventLog.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf\XmlHelper.cs">
+      <Link>XmlHelper.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

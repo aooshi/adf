@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+    <input type="button" value="Send Time" onclick="sendTextMessage()" />
+    <div id="say"></div>
+    <div id="status"></div>
+
+
+    <script>
+     var host = "ws://127.0.0.1:888";
+ try {
+    socket = new WebSocket(host);
+
+    socket.onopen = function (openEvent) {
+       document.getElementById("status").innerHTML += 
+          '<p>WebSocket Status:: Socket Open</p>';
+    };
+
+ socket.onmessage = function (messageEvent) {
+     document.getElementById("say").innerHTML += '<p>' + messageEvent.data + '</p>';
+ };
+
+ socket.onerror = function (errorEvent) {
+    document.getElementById("status").innerHTML +=
+      '<p>WebSocket Status:: Error was reported</p>';
+    };
+
+ socket.onclose = function (closeEvent) {
+    document.getElementById("status").innerHTML +=
+      '<p>WebSocket Status:: Socket Closed</p>';
+    };
+ }
+ catch (exception) { if (window.console) console.log(exception); }
+
+
+ function sendTextMessage() {
+
+     if (socket.readyState != WebSocket.OPEN) {
+         document.getElementById("status").innerHTML +=
+      '<p>WebSocket Status::No Open</p>';
+     }
+
+     socket.send("说:"+i++);
+}
+
+var i=0;
+
+    </script>
+
+	
+	</body>
+</html>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A900FFFE-2ABD-4ECD-83C1-5450153A7D99}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdfConsoleTest</RootNamespace>
+    <AssemblyName>AdfConsoleTest</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\AdfConsoleTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\AdfConsoleTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDataSerializableTest.cs" />
+    <Compile Include="ConfigTest.cs" />
+    <Compile Include="ConsistentHashingTest.cs" />
+    <Compile Include="DataSerializableTest.cs" />
+    <Compile Include="DictionarySortTest.cs" />
+    <Compile Include="DkimTest.cs" />
+    <Compile Include="HashSetDemo.cs" />
+    <Compile Include="HashSetDemoTest.cs" />
+    <Compile Include="HashSetTest.cs" />
+    <Compile Include="LogManagerTest.cs" />
+    <Compile Include="MemcacheTest.cs" />
+    <Compile Include="MulticastTest.cs" />
+    <Compile Include="PoolTest.cs" />
+    <Compile Include="QueueServerReceiveTest.cs" />
+    <Compile Include="QueueServerTest.cs" />
+    <Compile Include="RunStopwatch.cs" />
+    <Compile Include="SerializeTest.cs" />
+    <Compile Include="DynamicType.cs" />
+    <Compile Include="HeapSort.cs" />
+    <Compile Include="HttpServerTest.cs" />
+    <Compile Include="JsonTest.cs" />
+    <Compile Include="ListSort.cs" />
+    <Compile Include="Mq.cs" />
+    <Compile Include="PathHelperTest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queue_Array_test.cs" />
+    <Compile Include="QuickSort.cs" />
+    <Compile Include="QuickSort2.cs" />
+    <Compile Include="RedisTest.cs" />
+    <Compile Include="Skip32Test.cs" />
+    <Compile Include="SmtpTest.cs" />
+    <Compile Include="SocketConnectionTest.cs" />
+    <Compile Include="SocketTest.cs" />
+    <Compile Include="StringFormatTest.cs" />
+    <Compile Include="DnsHelperTest.cs" />
+    <Compile Include="ThreadSlatTest.cs" />
+    <Compile Include="ThreadTaskTest.cs" />
+    <Compile Include="TimeIdGeneratorTest.cs" />
+    <Compile Include="UniqueID.cs" />
+    <Compile Include="UUIDEncoder.cs" />
+    <Compile Include="QuickSort3.cs" />
+    <Compile Include="HttpServerTest2.cs" />
+    <Compile Include="WebSocketPerformanceTest.cs" />
+    <Compile Include="WhoisTest.cs" />
+    <Compile Include="MemberPoolTest.cs" />
+    <Compile Include="QueueServerRollbackTest.cs" />
+    <Compile Include="LogWriterTest.cs" />
+    <Compile Include="LogManagerTest2.cs" />
+    <Compile Include="LogAsyncManager.cs" />
+    <Compile Include="SmtpSelfTest.cs" />
+    <Compile Include="MemcacheIncrementTest.cs" />
+    <Compile Include="QueueServerBinaryTest.cs" />
+    <Compile Include="QueueServerJsonTest.cs" />
+    <Compile Include="QueueServerHttpTest.cs" />
+    <Compile Include="RunStopwatchNumString.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Config\App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\users\Users.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Global.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Smtp.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Log.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Server.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Adf\Adf.csproj">
+      <Project>{058AA3FA-50E1-4C08-9C53-519CDEB0F8D8}</Project>
+      <Name>Adf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

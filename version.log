@@ -1,0 +1,221 @@
+4.6
+	Add:	4.6.0, JsonHelper.Encode/Deocde
+	Add:	4.6.0, MD5Helper.FileMD5
+	Rem:	4.6.0, Channels/ICacheChannel, Channels/ISessionChannel
+	Rem:	4.6.0, WebSocketClient reconnect method
+	Obs:	4.6.0, QueueServerClient,QueueServerDefault,QueueServerPool
+	Add:	4.6.0, QueueServerEncoder
+	Add:	4.6.0, MailClient.LocalEndPoint
+	Add:	4.6.0, WebSocketClient.LocalEndPoint set
+	Opt:	4.6.0, HttpServerContext.Write / HttpServerContext.EndWrite
+	Opt:	4.6.0, HttpServer.ParsePostData
+	Add:	4.6.0, HttpClient
+	Add:	4.6.0, QueueServerBase
+	Add:	4.6.1, QueueServerAction create/delete
+	Add:	4.6.2, Adf.Mail.DKIM
+	Add:	4.6.3, LogWriter.WriteTime
+	Opt:	4.6.4, SmtpClient Receive Response
+	Add:	4.6.5, SocketHelper.Connect
+	Add:	4.6.5, MailClient connect timeout
+	Add:	4.6.6, HostHelper
+	Add:	4.6.7, PoolAbandonException, Pool.TryCall
+	Add:	4.6.8, Pool.RetryInspector
+	Add:	4.6.9, LRUCache
+	Add:	4.6.10, Adf.IO.BinaryReaderBE
+	Add:	4.6.10, Adf.IO.BinaryReaderLE
+	Add:	4.6.10, Adf.IO.BinaryWriterBE
+	Add:	4.6.10, Adf.IO.BinaryWriterBE
+	Add:	4.6.10, Adf.SocketConnection
+	Add:	4.6.10, Adf.LogLevel
+	Add:	4.6.10, Adf.LogAgent
+	Add:	4.6.11, Adf.ConfigHelper.PATH_APP_ROOT
+	Add:	4.6.12, Adf.PathHelper.GetApplicationFile()
+	Add:	4.6.13, Adf.ObjectHelper
+	Add:	4.6.13, Adf.ActionResult
+	Add:	4.6.13, Adf.Counter
+	
+
+4.5
+	Opt:	HttpServer.WebSocketForEach
+	Mod:	public HttpServerWebSocketContext.Send(byte[] data, WebSocketOpcode opcode)
+	Mod:	public HttpServerClient.Send(byte[] data, WebSocketOpcode opcode)
+	Rem:	HttpServerWebSocketContext.State
+	Opt:	HttpServerWebSocketContext.ReceiveMessageCallback to async
+	Opt:	WebSocketClient.RecieveCallback to async
+	Opt:	HttpServerWebSocketContext.Send Error to close
+	Opt:	WebSocketClient.Send Error to close
+	Rem:	HttpServer output default server header
+	Add:	HttpServerClient.UserState
+	Fix:	ExceptionMail MailRecipients
+	Fix:	Smtp InitConfig
+	Add:	ConfigValue.GetAndSetting
+	Rem:	ConfigBase Local File Support
+	Add:	HttpServer File Upload Support
+	Mod:	HttpServerContext.PostData
+	Add:	HttpServer.NewRequest event
+	Add:	HttpServer Gzip support
+	Add:	HttpServerContextBase Request Cookie support
+	Add:	class SocketReader
+	Add:	class SocketBufferReader
+	Fix:	StreamHelper.ReadLine
+	Fix:	SocketHelper.ReadLine
+	Add:	QueueTasks
+	Add:	SmtpConfig
+	Rem:	ConfigValue format index access method
+	Add:	PathRoute, HttpServerRouteHandler,¡¡HttpServerActionHandler
+	Rem:	Obsolete smtp
+	Rem:	Obsolete LogWriter
+	Rem:	Obsolete Confighelper
+	Rem:	Obsolete ConvigValue
+	Rem:	Obsolete ConfigBase
+	Rem:	Obsolete class CRCHelper
+	Rem:	Obsolete class ExceptionHelper
+	Rem:	Obsolete class SmtpHelper
+	Rem:	DbFactory Obsolete Member
+	Rem:	Mq Obsolete Member
+	Rem:	Obsolete Member HttpServerWebSocketContext.Continute
+	Rem:	Obsolete Member HttpServerContext.ContextType, HttpServerContext.ContentType
+	Opt:	ConsistentHashing
+	Add:	support httpserver head request
+	Add:	Skip32
+	Mod:	LogManagerWriter to internal
+	Mod:	DbLogger to protected
+	Rem:	DbFactory.LogManagerInitialize
+	Mod:	DbLogger
+	Mod:	DbFactory.Logger
+	Mod:	DbFactory.LogBuilder
+	Mod:	DbFactory.Dispose, remove connection .close
+	Opt:	DbFactory.Name
+	Add:	StringHelper.Format
+	Add:	ProcessTasks.ProcessTask
+	Add:	TimeIdGenerator
+	Add:	4.5.27,	ISessionChannel
+	Fix:	4.5.29, RandomHelper
+	Add:	4.5.30, ICacheChannel
+	Fix:	4.5.33, ConsistentHashing
+	Add:	4.5.34, ConfigHelper.GetSection
+	Add:	4.5.35, ConvertHelper.ArrayToDictionary
+	Add:	4.5.36, Mq.Receive
+	Add:	4.5.37, ConfigException
+	Add:	4.5.38, SyncQueue
+	Opt:	4.5.39, LogManager,LogWriter modify disabled options
+	Opt:	4.5.40, LogManager,LogWriter modify disabled options
+	Add:	4.5.41, BaseDataConvert.Bits31
+	Opt:	4.5.42, ThreadTasks
+	Add:	4.5.42, QueueServerClient
+	Opt:	4.5.43, HttpServerWebSocketContext.Send
+	Add:	4.5.45, ConvertHelper.ToInt32/ToUInt32/ToUInt64/ToInt16/ToUInt16, obsolete Int to Int32
+	Add:	4.5.45, WebSocketErrorEventArgs, edit ErrorEventArgs to WebSocketErrorEventArgs
+	Add:	4.5.45, QueueServerPool
+	Add:	4.5.45, MemberPool
+	Fix:	4.5.47, QueueServerClient
+	Add:	4.5.48, Pool.NewInstance
+	Add:	4.5.48, HttpServerWebSocketContext.Allowed
+	Add:	4.5.50, QueueServerClient.Insert & add string
+	Add:	4.5.53, MemberPool.GetMembers
+	Add:	4.5.54, MemberPool.Get(int millisecondsTimeout)
+	Opt:	4.5.55, WebSocketContext.OnMessgae
+	Opt:	4.5.56, Config change Check
+	Opt:	4.5.56, LogWriter flush timer
+	Rem:	4.5.56, ConfigBase.ReloadMerge
+	Add:	4.5.56, LogConfig
+	Rem:	4.5.56, LogAsyncManager, LogAsyncWriter
+	Mod:	4.5.56, LogManager.CreateAsyncLogWriter
+	Opt:	4.5.56, LogWriter Path and config process
+	Fix:	4.5.57, StreamHelper.Receive
+	Rem:	4.5.57, HttpServerWebSocketMessageEventArgs
+	Rem:	4.5.57, HttpServerWebSocketContext.DataReceived
+	Add:	4.5.57, HttpServer.OnWebSocketNewMessage, HttpServer.WebSocketNewMessage
+	Opt:	4.5.57, LogWriter flush handle
+	Add:	4.5.57, PathHelper.CheckFileName, CheckFilePath
+	Add:	4.5.57, QueueTask
+	Opt:	4.5.57, QueueTasks
+	Opt:	4.5.57, HttpServerWebSocketContext
+	Mod:	4.5.58, QueueServerClient receive, subscribe, unsubscribe, select
+	Rem:	4.5.58, QueueServerBatchClient
+	Add:	4.5.59, QueueServerClient receive reconnect method
+	Add:	4.5.59, WebSocketClient reconnect method
+	Fix:	4.5.60, QueueTasks & QueueTask wait completed
+	Mod:	4.5.61, HttpServer WebSocket edit & add GetRemoteNode
+	Add:	4.5.62, WaitTable
+	Add:	4.5.63, ConfigBase Add GetAttr
+	Add:	4.5.64, re-build memcache, add touch
+	Add:	4.5.65, Adf.Mail
+	Add:	4.5.66, WebSocket send async event
+	Mod:	4.5.67, QueueServerClient move Adf.Clients to Adf
+	Add:	4.5.68, SessionClient,SessionManager
+	Add:	4.5.69, RedisClientDefault,MemcacheDefault,QueueServerDefault
+	Add:	4.5.70, SessionClient getKey
+	Mod:	4.5.71, QueueServerClient receive
+	Mod:	4.5.73, SessionManager uid change to long
+	Add:	4.5.75, LogWriter.ThrowFlushError
+	Add:	4.5.75, LogManager.ThrowFlushError
+	Add:	4.5.76, StreamReadState, StreamHelper.Read
+	Add:	4.5.77, StreamHelper.Receive
+	Fix:	4.5.78, QueueTask.comEventHandle.Set();
+	Add:	4.5.79, HashItemPool, ICreater
+	Add:	4.5.80, Memcache.ReadTimeout
+	Fix:	4.5.82, MailClient.Helo()
+	Mod:	4.5.83, WebSocketClient.ReadCallback, read zero no trigger error.
+	Add:	4.5.84, WebSocketCloseReason.Disconnected
+	Opt:	4.5.85, WebSocket opt read
+		
+4.5
+	Mod: WebSocketClient
+	Add: HttpServer.Authorization
+	
+4.4
+	Fix: SocketHelper.IsClose
+	Add: SocketHelper.TryClose
+	Fix: RedisClient GetKeys Return
+	Fix: Pool.cotr, SupportHash
+	Fix: RedisClient.Select
+	Fix: RedisClient.Db
+	Fix: RedisHashes.HMSET
+	Fix: HttpServerContext.ContentType
+	Add: HttpServerContext.PostData
+	Add: HttpServerContextBase.UserState
+	Add: HttpServer KeepAlive
+	//
+	Fix: RetryHelper
+	Fix: LogManager.GetWriter is NullReferenceException
+	Add: LogManager.AsyncManager
+	Add: logException
+	Add: LogWriter.Disposing event
+	Opt: LogManager Console
+	Opt: LogManager ForEach
+	Opt: LogWriter Property
+	Opt: LogWriter cacheBuilder to cacheStream
+	Add: SocketHelper.Receive offset
+	Add: StreamHelper.Receive offset
+	Mod: DbFactory default not open
+	Add: BaseDataConverter
+	Add: DataSerializable
+	Add: TimesecondHelper
+	
+4.3
+	add DbHelper.CloneParameters
+	obsolete Db.IFactory Begin,Commit,Rollback
+	add Db.IFactory.TransactionBegin,Db.IFactory.TransactionCommit,Db.IFactory.TransactionRollback
+	modify memcache serializable, repair memcache.incrment and decrment
+	bug unixtimestamp
+	opt modify UniqueID
+	add UUIDEncoder
+	reconsitution redis
+	add RedisHyperLogLog
+	bug: propertyaccessor getgets  canwrite to canread
+	add DbFactory.Call
+
+4.2
+	add class ListHash
+	modify ICache,add GetString method object Get(string key,Type type);
+	add class ThreadTasks,ObjectCache
+	add delegate TResult CFunc<out TResult>()
+	add class Adf.Web.WebProgressCache
+	add class Adf.IObjectCache
+	add class Adf.ObjectCache<T>
+	Adf.Smtp add method CheckAuth
+	Adf.Smtp add property SSLEnabled
+	add ISmtp,Smtp SSLEnabled Support
+	opt+ Adf.Mq ThreadPool.QueueUserWorkItem to Thread
+	Adf.Pool add property RuningCount
