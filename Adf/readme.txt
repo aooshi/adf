@@ -1,8 +1,9 @@
 下载(download):
-	http://www.aooshi.org/download/
+	http://www.aooshi.org/adf/download/
 
 源(source):
-	SVN：http://www.aooshi.org/adf
+	https://github.com/aooshi/
+	https://github.com/aooshi/adf
 
 other:
 	adf原名aooshi, 于第4版本起更名为 adf

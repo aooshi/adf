@@ -29,11 +29,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>C:\develop\bin\adf4\net20\4.6.13\</OutputPath>
+    <OutputPath>C:\develop\bin\adf\4.6.13\net20\</OutputPath>
     <DefineConstants>TRACE;NET2</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>C:\develop\bin\adf4\net20\4.6.13\Adf.xml</DocumentationFile>
+    <DocumentationFile>C:\develop\bin\adf\4.6.13\net20\Adf.xml</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>

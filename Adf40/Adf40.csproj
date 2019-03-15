@@ -25,11 +25,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>C:\develop\bin\adf4\net40\4.6.13\</OutputPath>
+    <OutputPath>C:\develop\bin\adf\4.6.13\net40\</OutputPath>
     <DefineConstants>TRACE;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>C:\develop\bin\adf4\net40\4.6.13\Adf.XML</DocumentationFile>
+    <DocumentationFile>C:\develop\bin\adf\4.6.13\net40\Adf.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -39,7 +39,6 @@
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Compile Include="..\Adf\ActionResult.cs">
       <Link>ActionResult.cs</Link>
@@ -713,6 +712,12 @@
     <Compile Include="..\Adf\XmlHelper.cs">
       <Link>XmlHelper.cs</Link>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Adf\readme.txt">
+      <Link>readme.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
